@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: darkblue; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: darkblue;
+    font-family: darkblue;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: lightgray;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: lightblue;
+    width: 100%;
+    z-index: 1;
+    color: black;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #black;
+    color: #black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+/* { /* NAV BAR Design details
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    background-color: #113158;
+    text-align: center;
+}
+
+
+li{
+    display:inline;
+    float: left;
+    text-align: center;
+    margin: 0px 0px;
+}
+
+li a{ /* How Menu bar "words" like (Home, About, Contact Me) as displayed
+    display: inline;
+    padding: 8px;
+    background-color: #173254;
+}
+
+/* BEGIN-- Hero background color
+.hero{
+    position: relative;
+    width: 100%;
+    height: 105vh;
+    background: -webkit-linear-gradient(#50a8fa, black);
+    position: relative;
+}
+/* END-- Hero background color*/
+
+/*nav{
+    display: flex;
+    width: 80%;
+    margin: 0%;
+    padding: 20px 20;
+    align-items: normal;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{ /* Style of nave bar
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+    padding: 12px;
+}
+
+nav ul li a{ /*Nav bar menu words 
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+}
+
+nav ul li a:hover { /* Color of words on NAV BAR when mouse hovers over 
+    color: #55aaf9;
+}
+
+
+.detail{ /*Positioning of detail words "I'm Jacqueline Martinez"
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detail h1{ 
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}*/
+
+/* BEGIN-- Color gradient of last name on detail portion */
+span{
+  font-size: 72px;
+   background: -webkit-linear-gradient(left, #bd9b3d , rgb(243, 243, 149));
+   background: -o-linear-gradient(right, #bd9b3d, rgb(243, 243, 149));
+   background: -moz-linear-gradient(right, #bd9b3d, rgb(243, 243, 149));
+   background: linear-gradient(to right, #d69e02dc, rgba(251, 250, 147, 0.884)); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*END-- Color gradient of last name on detail portion */
+
+.detail p{
+    color: rgb(0, 0, 0);
+    line-height: 22px
+}
+
+/*
+.detal a {
+    background: #212121;
+    padding: 10px, 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+} THIS PORTIION IS TO MAKE A BLACK DOWNLOAD BUTTON*/
+
+
+.images{
+    width: 45%;
+    height: 86%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+} /*THIS PORTION IS TO POSITION GIRL IMAGE AND YELLOW IMAGE TO THE BACKGROUND OF THE GIRL PICTURE*/
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+} /* TO Position girl picture to top on page in front of yellow shape */
+
+.images:hover .shape{
+    bottom: 40px;
+} /* To move yellow shape towards the bottom for 1second when the movie hovers over it */
+
+.images:hover .girl{
+    left: 45%;
+} /* To move girl cut out picture towards the left for 1 second when the mouse hovers over it */
+
+
+footer {
+    background-color: rgb(96, 133, 158);
+    display:block;
+    text-align: center;
+    padding: 10px;
+    margin:0px;
+    color:white;  
+  }
+
+  
