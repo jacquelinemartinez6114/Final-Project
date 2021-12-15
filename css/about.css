@@ -1,3 +1,72 @@
+.wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+  
+    max-width: 960px; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+  }
+
+
+  * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: #173254;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+#navbar a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
 ul { /* NAV BAR Design details */
     list-style-type: none;
     width: 100%;
@@ -6,7 +75,7 @@ ul { /* NAV BAR Design details */
     overflow: hidden;
     background-color: #173254;
     text-align: center;
-    height: 70px;
+    height: 80px;
 }
 
 
@@ -14,21 +83,23 @@ li{
     display:inline;
     float: right;
     text-align: center;
-    margin: 0px 0px;
+    margin: 60px 0px;
+	padding-bottom: 30%;
 }
 
 li a{ /* How Menu bar "words" like (Home, About, Contact Me) as displayed*/
     display: inline;
-    padding: 50px;
-    margin: 20px;
+    padding: 60px;
+    margin: 0px;
     background-color: #173254;
+    
 }
 
 /* BEGIN-- Hero background color*/
 .hero{
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background: -webkit-linear-gradient(#50a8fa, rgb(20, 20, 20));
 }
 /* END-- Hero background color*/
@@ -38,7 +109,7 @@ nav{
     display: flex;
     width: 100%;
     /*margin: auto;*/
-    margin-top: -60px;
+    margin-top: -40px;
     padding: 30px 0;
     align-items: center;
     justify-content: space-between;
@@ -46,9 +117,10 @@ nav{
 }
 
 .logo{
-    width: 100px;
+    width: 200px;
+    height: 180px;
     cursor: pointer;
-    padding: 35px;
+    padding: 30px;
 }
 
 .logo2{
@@ -80,100 +152,15 @@ nav ul li a:hover { /* Color of words on NAV BAR when mouse hovers over */
 }
 
 
-.detail{ /*Positioning of detail words "Hello, I am Jacqueline Martinez" */
-    margin-left: 0%;
-    margin-top: 0%;
-	padding: 5%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.detail h1{ 
-	font-size: 50px;
-   background: linear-gradient(to right, #c59734, rgba(241, 240, 163, 0.884), rgba(241, 240, 163, 0.884), #c59734); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    margin-bottom: 50px;
-	padding-bottom: 10;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-.detail h2{
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
-}
-
-/* BEGIN-- Color gradient of first and last name on detail portion */
-.detail span{
-  font-size: 100px;
-  font-family: 'Carattere', cursive;
-   background: linear-gradient(to right, #c59734, rgba(251, 250, 147, 0.884), #c59734); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-left: 3%;
-
-}
-/*END-- Color gradient of first and last name on detail portion */
-
-.detail p{
-    color: rgb(246, 248, 212);
-    line-height: 25px;
-	padding-top: 20px;
-	font-size: 20px;
-    margin-bottom: 10px;
-	margin: -0%;
-	padding: 2%;
-	padding-left: 0%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.detail p2{
-	color: rgb(246, 248, 212);
-    line-height: 22px;
-	font-size: 20px;
-	margin: -20%;
-	padding: 20%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.detail a {
-    background: #a3993f;
-    padding: 10px, 18px;
-    text-decoration: none;
-    font-weight: none;
-	float: center;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 2;
-    border-radius: 5px;
-} /*THIS PORTION IS TO MAKE A BLACK DOWNLOAD BUTTON*/
 
 
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-} /*THIS PORTION IS TO POSITION GIRL IMAGE AND YELLOW IMAGE TO THE BACKGROUND OF THE GIRL PICTURE*/
 
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
-} /* TO Position girl picture to top on page in front of yellow shape */
 
-.images:hover .shape{
-    bottom: 40px;
-} /* To move yellow shape towards the bottom for 1second when the movie hovers over it */
 
-.images:hover .girl{
-    left: 45%;
-} /* To move girl cut-out picture towards the left for 1 second when the mouse hovers over it */
+
+
+
+
 
 
 

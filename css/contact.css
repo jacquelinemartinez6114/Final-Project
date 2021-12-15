@@ -6,7 +6,7 @@ ul { /* NAV BAR Design details */
     overflow: hidden;
     background-color: #173254;
     text-align: center;
-    height: 70px;
+    height: 80px;
 }
 
 
@@ -14,7 +14,7 @@ li{
     display:inline;
     float: right;
     text-align: center;
-    margin: 0px 0px;
+    margin: 60px 0px;
 }
 
 li a{ /* How Menu bar "words" like (Home, About, Contact Me) as displayed*/
@@ -38,7 +38,7 @@ nav{
     display: flex;
     width: 100%;
     /*margin: auto;*/
-    margin-top: -60px;
+    margin-top: -30px;
     padding: 30px 0;
     align-items: center;
     justify-content: space-between;
@@ -47,16 +47,10 @@ nav{
 
 .logo{
     width: 100px;
+    height: 90px;
     cursor: pointer;
-    padding: 35px;
-}
-
-.logo2{
-    display: inline-block;
-	width: 120px;
-	height: 120px;
-	cursor: pointer;
-    padding-bottom: 30px;
+    padding: 5px;
+    margin-right: -20px;
 }
 
 nav ul li{ /* Style of NAV bar*/
@@ -80,102 +74,41 @@ nav ul li a:hover { /* Color of words on NAV BAR when mouse hovers over */
 }
 
 
-.detail{ /*Positioning of detail words "Hello, I am Jacqueline Martinez" */
-    margin-left: 0%;
-    margin-top: 0%;
-	padding: 5%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+/* CONTACT FORM*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.detail h1{ 
-	font-size: 50px;
-   background: linear-gradient(to right, #c59734, rgba(241, 240, 163, 0.884), rgba(241, 240, 163, 0.884), #c59734); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    margin-bottom: 50px;
-	padding-bottom: 10;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+input[type=submit] {
+  background-color: #5d5f5e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.detail h2{
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
-/* BEGIN-- Color gradient of first and last name on detail portion */
-.detail span{
-  font-size: 100px;
-  font-family: 'Carattere', cursive;
-   background: linear-gradient(to right, #c59734, rgba(251, 250, 147, 0.884), #c59734); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-left: 3%;
-
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
-/*END-- Color gradient of first and last name on detail portion */
-
-.detail p{
-    color: rgb(246, 248, 212);
-    line-height: 25px;
-	padding-top: 20px;
-	font-size: 20px;
-    margin-bottom: 10px;
-	margin: -0%;
-	padding: 2%;
-	padding-left: 0%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.detail p2{
-	color: rgb(246, 248, 212);
-    line-height: 22px;
-	font-size: 20px;
-	margin: -20%;
-	padding: 20%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.detail a {
-    background: #a3993f;
-    padding: 10px, 18px;
-    text-decoration: none;
-    font-weight: none;
-	float: center;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 2;
-    border-radius: 5px;
-} /*THIS PORTION IS TO MAKE A BLACK DOWNLOAD BUTTON*/
-
-
-.images{
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-} /*THIS PORTION IS TO POSITION GIRL IMAGE AND YELLOW IMAGE TO THE BACKGROUND OF THE GIRL PICTURE*/
-
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
-} /* TO Position girl picture to top on page in front of yellow shape */
-
-.images:hover .shape{
-    bottom: 40px;
-} /* To move yellow shape towards the bottom for 1second when the movie hovers over it */
-
-.images:hover .girl{
-    left: 45%;
-} /* To move girl cut-out picture towards the left for 1 second when the mouse hovers over it */
-
-
 
 
 footer {
@@ -222,12 +155,12 @@ section {
 	float: left;
 }
 
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Roboto', cursive;
-	margin: 0 0 10px;
+.logo2{
+    display: inline-block;
+	width: 120px;
+	height: 140px;
+	cursor: pointer;
+    padding-bottom: 30px;
 }
 
 .footer-distributed h3 span{
